@@ -1,0 +1,29 @@
+#Download and documentation
+https://www.ruby-lang.org/en/downloads/
+
+##Interesting language design choices
+
+Names of methods in Ruby follow the same rules and conventions as local variables
+(except that they can end with ?, !, or =, with significance you’ll see later). This is by
+design: methods don’t call attention to themselves as methods but rather blend into
+the texture of a program as, simply, expressions that provide a value. In some contexts
+you can’t tell, just by looking at an expression, whether you’re seeing a local variable
+or a method name—and that’s intentional.
+
+###Sound familiar?
+Ruby sees all data structures and values (including scalar (atomic) values like integers
+and strings, but also including complex data structures like arrays) as objects. Every
+object is capable of understanding a certain set of messages.
+
+###The origin of objects in classes
+Classes define clusters of behavior or functionality, and every object is an instance of
+exactly *one* class.
+
+## Using the Ruby Interpreter
+To check for syntax errors without running through the interpreter -cw stands for (c)heck for syntax errors (w)ith warnings
+
+$ ruby -cw c2f.rb 
+
+To run the program
+$ ruby celsius_to_fahrentheit.rb
+
